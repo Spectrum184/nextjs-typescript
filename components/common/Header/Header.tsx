@@ -1,10 +1,9 @@
-import React from 'react'
-import { Box } from '@mui/system'
 import Container from '@/components/Container'
+import React, { FC } from 'react'
+import { Box } from '@mui/system'
 import Link from 'next/link'
-import { useStyles } from './styles'
 
-export const Header: any = () => {
+const Header: FC = () => {
 	return (
 		<Box
 			component="header"
@@ -44,3 +43,5 @@ export const Header: any = () => {
 		</Box>
 	)
 }
+
+export default Header

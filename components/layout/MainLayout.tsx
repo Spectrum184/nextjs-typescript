@@ -1,9 +1,13 @@
-import React from 'react'
-import { Header, Footer } from '@/components/common/index'
-import Box from '@mui/material/Box'
+import Header from '../common/Header'
+import Footer from '../common/Footer'
+import React, { FC } from 'react'
 import Stack from '@mui/material/Stack'
 
-export const MainLayout: any = ({ children }: any) => {
+interface PropsType {
+	children: React.ReactNode
+}
+
+const MainLayout: FC<PropsType> = ({ children }) => {
 	return (
 		<Stack minHeight={'100vh'}>
 			<Header></Header>
@@ -12,3 +16,5 @@ export const MainLayout: any = ({ children }: any) => {
 		</Stack>
 	)
 }
+
+export default MainLayout

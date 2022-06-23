@@ -16,9 +16,7 @@
 		"incremental": true,
 		"baseUrl": ".",
 		"paths": {
-			"@/utils/*": ["./utils/*"],
-			"@/components/*": ["./components/*"],
-			"@/containers/*": ["./containers/*"]
+			"@/*": ["*"]
 		},
 		"noImplicitAny": true,
 		"noImplicitThis": true,
